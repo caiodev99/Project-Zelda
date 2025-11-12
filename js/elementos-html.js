@@ -4,10 +4,13 @@ const botaoMateriais = document.getElementById('materiais');
 const botaoEquipamentos = document.getElementById('equipamentos');
 const botaoTesouros = document.getElementById('tesouros');
 
+const divResultados = document.querySelector('.resultados');
+
 export {
   botaoCriaturas,
   botaoMonstros,
   botaoMateriais,
   botaoEquipamentos,
-  botaoTesouros
+  botaoTesouros,
+  divResultados
 }

@@ -19,10 +19,14 @@ function criaCard(infosObjeto) {
 
       <div class="content">
         <p>${infosObjeto.description}</p>
-        <span class="tag is-link">📍 ${infosObjeto.common_locations[0]}</span>
+        <span class="tag is-link">📍 ${
+          infosObjeto.common_locations ? infosObjeto.common_locations[0] : "N/A"
+        }</span>
       </div>
     </div>
   `;
 
   return div;
 }
+
+export { criaCard }
