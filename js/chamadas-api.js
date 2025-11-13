@@ -6,8 +6,8 @@ async function buscarCriaturas() {
     const response = await fetch('https://botw-compendium.herokuapp.com/api/v3/compendium/category/creatures');
     const dados = await response.json();
 
-    console.log(dados)
-
+    console.log(dados);
+    
     for (let index = 0; index < dados.data.length; index++) {
       const card = criaCard(dados.data[index]);
       divResultados.appendChild(card);
